@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Codigos-fonte</h1>
+<code>
+    <p>O comando document. getElementbyIDtest é escrito em linguagem JavaScript</p>
+</code> <!--paragráfo envelopado pela tag code = Fonte monoespaçada-->
+
+<code>
+   num = int(imput( "Digite um número")) if num % 2 ==0: 
+        print(f'O número {num} é PAR')
+   else: 
+        print(f'O número {num} é IMPAR')
+   print('Fim do programa') <!--A tag code não organiza o codigo com identação-->
+</code>
+
+<pre>
+    <code>
+        num = int(imput( "Digite um número")) if num % 2 ==0:
+                print(f'O número {num} é PAR')
+        else:
+                print(f'O número {num} é IMPAR')
+        print('Fim do programa') <!--A tag code não organiza o codigo com identação, porem ao envelopar com a tag PRE ele organiza tudo inclusive a indentação-->
+     </code>
+</pre>
+
+<h2>Citações simples</h2>
+
+<p>Como diria o pai de um amigo <q>computador é um burro muito rápido</q></p><!--Tag Q - Citação simples, sem quebra de linha -->
+
+<h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livros HTML para leigos:</p>
+
+<blockquote cite="#">
+    A diferença entre elementos inline e um bloco de texto é importante, Os elementos HTML neste capítulo descrevem o bloco de texto.
+</blockquote> <!--Citação completas podem adicionar a tag CITE para inserir links, não aparece no front, porem importante para motores de busca-->
+
+<h2>Abreviações</h2>
+<p>Eu estou estudando <abbr title="HiperTaxt Markup language">HTML</abbr> e <abbr title="Cascadind Style Sheets">CSS</abbr>. Estou adorando</p><!--A tag de abreviação quando usada é importante para motores de buscas-->
+
+<h2>Texto invertido</h2>
+<p><bdo dir="ltr">Este é um exemplo de texto invertido usando a tag [bdo:r]</bdo></p><!--A tag BDO:L inverte o texto para a direita-->
+
+<p><bdo dir="rtl">Este é um exemplo de texto invertido usando a tag [bdo:l]</bdo></p>
+<!--A tag BDO:L inverte o texto para a esquerda-->
+
+
+</body>
+</html>

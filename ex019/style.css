@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+body{
+    background-color: rgb(103, 4, 101);
+}
+main{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    background-color: rgb(246, 255, 0);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+h1{
+    color: black;
+}
+h2{
+    color: rgb(3, 11, 238);
+}
+p{
+    text-align: justify;
+}
+h1#principal{
+    background-color: brown;
+    color: white;
+    text-align: center;
+}
+.basico{
+    font-style: oblique;
+}
+.intermediario{
+    color: rgb(255, 0, 238);
+}
+.avancado{
+    font-size: 2.4em;
+    color: blueviolet;
+}
+.destaque{
+    font-style: italic;
+    text-decoration: overline;
+}

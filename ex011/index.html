@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+    <link rel="shortcut icon" href="imagens/300x300.webp" type="image/x-icon">
+
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplismente aumente o navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/300x300.webp" type="image/webp">
+        <source media="(max-width: 1050px)" srcset="imagens/700x700.webp" type="image/webp">
+        <img src="imagens/1000x1000.webp" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio em html5</p>
+    <audio src="midia/soft-corporate-243262 (1).mp3" autoplay controls></audio><!--Maneira mais simples, porem dependo do navagador pode nao reproduzir - neste caso precisamos de usar outros formatos compativeis com html5, ogg e wav-->
+    <audio preload="auto"  autoplay controls loop>
+        <source src="midia/soft-corporate-243262 (1).mp3" type="audio/mpeg"><!--ideal pra audio-->
+        <source src="midia/soft-corporate-243262 (1).mp3" type="audio/ogg"><!--Solução open source-->
+        <source src="midia/soft-corporate-243262 (1).mp3" type="audio/wav"><!--Este tipo deve ser usado com catela - arquivo pesado-->
+        <p>Infelizmente seu navegador não consegue reproduzir audio</p>
+    <a href="midia/soft-corporate-243262 (1).mp3" target="_blank" rel="nofollow">Clique aqui para baixar o arquivo mp3</a>
+</audio>
+</body>
+</html>

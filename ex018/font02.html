@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+<style>
+    @font-face {
+        font-family: DMSerif;
+        src: url('fonts/DMSerifDisplay-Regular.ttf'), format('truetype'), url('fonts/DMSerifDisplay-Italic.ttf'), format('truetype');
+
+
+        /*
+        Tipos de format:
+        -opentype (otf)
+        -truetype (ttf)
+        -embedded
+        -truetype -aat (apple advanced typography)
+        -svg
+        */
+    }
+
+    body{
+        font-family: 'DMSerif', Arial, Helvetica, sans-serif;
+        font-size: 32px;
+    }
+    h1{
+        font-family: 'DMSerif', Times New Roman, Times, serif;
+        font-size: 2em;
+        font-style: normal;
+    }
+    p{
+        font-size: 1em;
+    }
+</style>
+</head>
+<body>
+    <h1>Título fonte Externa</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia iste magni nemo facilis quis laudantium earum. Dolore nobis optio labore, modi rem a facere quae, at nisi incidunt veritatis!</p>
+</body>
+</html>

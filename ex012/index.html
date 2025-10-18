@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente [servidor]</h1>
+    <p>Este video está hospedade no meu próprio servidor</p>
+    <video src="midia/aula-12-video.mp4" width="500" controls poster="imagens/lemons-6606798_1920 (1) (1).webp"></video><!--Formato mais simples de inserir videos no html5-->
+    <video controls poster="imagens/lemons-6606798_1920 (1) (1).webp" width="500">
+        <source src="midia/aula-12-video.mp4" type="video/mp4">
+        <source src="midia/aula-12-video.m4v"  type="video/ogg">
+        <source src="midia/aula-12-video.ogv" type="video/ogg">
+        <a href="midia/aula-12-video.m4v">
+            <p>Seu navegador nao tem compatibilidade ccom reprodução de videos clique para baixar</p>
+        </a>
+    </video>
+
+    <h1>Inserindo videos do Youtube/vimeo [externo]</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/rx8EhkXk9zs?si=RpGlx76Crz_tbed0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://player.vimeo.com/video/319343094?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="New Demo"></iframe>
+</body>
+</html>
